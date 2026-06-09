@@ -15,7 +15,7 @@
         description = "Flutter + Devenv environment";
       };
 
-      nodejs = {
+      python = {
         path = ./python;
         description = "Python + Devenv environment";
       };
