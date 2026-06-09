@@ -34,7 +34,7 @@
 
   # https://devenv.sh/basics/
   enterShell = ''
-    [ -z "$(sh -c "ls -I devenv.nix -I devenv.yaml -I .envrc -I devenv.lock -I flake.nix -I flake.lock")" ] && clear && echo "Welcome to your devenv shell! The current directory is empty, run "wizard" to set up your project." || echo "Welcome to your devenv shell!"
+    [ -z "$(sh -c "ls -I devenv.nix -I devenv.yaml -I .envrc -I devenv.lock -I flake.nix -I flake.lock")" ] && clear && echo "Welcome to your devenv shell! The current directory is empty, run 'wizard' to set up your project." || echo "Welcome to your devenv shell!"
   '';
 
   # https://devenv.sh/tasks/
