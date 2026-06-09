@@ -29,7 +29,7 @@
   # https://devenv.sh/scripts/
   scripts.wizard.exec = ''
     o=$(gum input --placeholder "com.example (Org)"); d=$(gum input --placeholder "Description"); t=$(gum choose "app" "module" "package" "plugin"); e="No"; [ "$t" = "app" ] && e=$(gum choose "No (Standard Template)" "Yes (--empty)"); p=$(gum choose --no-limit "ios" "android" "windows" "linux" "macos" "web" | paste -sd, -); f="--org ''${o:-com.example} --project-name $(basename "$PWD") --template $t"; [ "$e" = "Yes (--empty)" ] && f="$f --empty"; [ -n "$d" ] && f="$f --description '$d'"; [ -n "$p" ] && f="$f --platforms=$p"
-    flutter create $f .
+    flutter create . $f
   '';
 
   # https://devenv.sh/basics/
